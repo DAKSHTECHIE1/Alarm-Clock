@@ -118,9 +118,6 @@ body{
     width: 40%;
   }
 #daddy{
-    /* position: absolute;
-    top:70px; */
-    /* text-align: center; */
     height:100%;
     width:400px;
     display:flex;
@@ -370,4 +367,126 @@ input,select{
 #timers .glass div:hover{
     color:red;
     
+}
+@media (min-width:1000px){
+    #upper{
+        height:170px;
+        width:97vw;
+        position: relative;
+        top:0px;
+    }
+    .clock {
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        right:20px;
+    }
+    #daddy{
+        width:250px;
+        position:absolute;
+        left:30px;
+    }
+    #title{
+        height:100%;
+        width:70%;
+        font-size:30px;
+    }
+    #logo{
+        height:70px;
+        width:70px;
+        position: relative;
+        top:0px;
+    }
+    #middle{
+        height:250px;
+        width:97vw;
+        margin-top:-40px;
+    }
+    #outer{
+        position:relative;
+        left:2.7vw;
+        top:70px;
+        width:30vw;
+    }
+    #inner{
+        top:-15px;
+        right:15px;
+    }
+    #head{
+        position: relative;
+        top:10px;
+        font-size:30px;
+    }
+    #line{
+        position: relative;
+        width:20vw;
+        top:20px;
+      
+    }
+    #curr-date{
+        position: relative;
+        top:30px;
+        font-size:25px;
+    }
+    #curr-time{
+        position: relative;
+        top:50px;
+        font-size:25px;
+    }
+    #form-show{
+        top:90px;
+    }
+    #show-form-button{
+        height:40px;
+        font-size: 17px;
+    }
+    #form{
+        position:relative;
+        top: 70px;
+        height:280px;
+        width:40vw;
+      
+    }
+    #form-heading{
+        text-align: center;
+    }
+    
+    #form i{
+        position:relative;
+        top:5px;
+        left:4px;
+        font-size: 18px;
+    }
+    #for-date,.for-time,#for-zone{
+        width:70%;
+        height:25px; 
+    }
+    input,select{
+        height:20px;
+        font-size: 15px;
+    }
+    .for-time,#for-zone{
+        position: relative;
+        margin-top: 15px;
+    }
+    .for-time input{
+        position: relative;
+        left:2px;
+        font-size: 15px;
+    }
+    #alarm-btn{
+        height:23px;
+        font-size: 18px;
+        background-color: rgb(111, 111, 232);
+        position: relative;
+        bottom: 6px;
+    }
+    #items{
+        min-height:270px;
+        top:80px;
+    }
+    #timers .glass{
+        height:70px;
+        font-size: 30px;
+    }
 }

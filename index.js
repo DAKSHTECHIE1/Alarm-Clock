@@ -70,8 +70,8 @@ console.log(date);
     // console.log(`alarm-${time}-${date}`);
      li.setAttribute('class',`glass`);
     li.innerHTML=`
-        <span><h3>${date}</h3></span> 
-        <span><h3>${time}</h3></span>
+        <span>${date}</span> 
+        <span>${time}</span>
         <div class="del" onclick='deleteAlarm(event)' id='alarm-${time}-${date}'>X</div>
         
                 `
