@@ -490,3 +490,33 @@ input,select{
         font-size: 30px;
     }
 }
+@media (min-width:1200px){
+    #middle{
+        height:300px;
+    }
+    #head{
+        position: relative;
+        top:10px;
+        font-size:35px;
+    }
+    #line{
+        position: relative;
+        width:20vw;
+        top:20px;
+      
+    }
+    #curr-date{
+        position: relative;
+        top:40px;
+        font-size:25px;
+    }
+    #curr-time{
+        position: relative;
+        top:70px;
+        font-size:25px;
+    }
+    #form-show{
+        top:110px;
+    }
+
+}
