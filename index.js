@@ -26,17 +26,21 @@ var timeString=-1;
     currentTime.innerHTML = timeString;
   };
   setInterval(currTime, 1000);
+  var totaller=-1;
   const currDate=()=>{
     const currentDate = new Date();
     const date=currentDate.getDate().toString();
     // const month=currentDate.getMonth().toString();
     var month = currentDate.toLocaleString('default', { month: 'long' });
     const total=date+" "+month;
+    const year=currentDate.getUTCFullYear();
+    totaller=total+' '+year;
+    console.log(totaller);
     console.log(total);
     var dater=document.getElementById('curr-date');
     dater.innerHTML = total;
   }
-  currDate(setInterval,1000000);
+  currDate(setInterval,1000);
 const addAlarm=(event)=>{
     event.preventDefault();
     var obj={};
@@ -62,17 +66,19 @@ console.log(date);
     console.log(typeof(time));
     var timers=document.getElementById('timers');
     const li = document.createElement('div')
-    // li.setAttribute('id',`alarm-${time}-${date}`)
+    li.setAttribute('id',`alarm-${time}-${date}`)
+    // console.log(`alarm-${time}-${date}`);
      li.setAttribute('class',`glass`);
     li.innerHTML=`
         <span><h3>${date}</h3></span> 
         <span><h3>${time}</h3></span>
-        <div class="del" onclick='deleteAlarm(event)' id='${time}-${date}'>X</div>
+        <div class="del" onclick='deleteAlarm(event)' id='alarm-${time}-${date}'>X</div>
         
                 `
     timers.append(li);
     obj['date']=date;
     obj['time']=time;
+    console.log('dx',date,'tx',time);
     arr.push(obj);
     const myform=document.getElementById('form');
     myform.reset();
@@ -82,8 +88,9 @@ console.log(date);
 }
   const deleteAlarm=(event)=>{
     event.preventDefault();
-    console.log(event.target.id);
-    const element=document.getElementById(`alarm-${event.target.id}`);
+    // console.log('et',event.target.id);
+
+    const element=document.getElementById(`${event.target.id}`);
     element.remove();
      const data=event.target.id;
      for (var i=0;data[i]!='-';i++){
@@ -103,12 +110,13 @@ console.log(date);
   }
   //<button onclick='deleteAlarm(event)' id='${time}'>Delete</button>
   const checkAlarm=()=>{
-    let dateString = new Date().toJSON().slice(0, 10);
     const samay=timeString;
-    const dinank=dateString;
+    const dinank=totaller;
+    console.log('sx',samay,'tx',totaller);
     for(let obj of arr){
         console.log('in');
         if(obj['time']==samay&&obj['date']==dinank){
+            console.log('inner')
             alert('uth jao');
             const element=document.getElementById(`alarm-${samay}-${dinank}`);
             element.remove();

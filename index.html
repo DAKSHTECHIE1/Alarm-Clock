@@ -1,55 +1,87 @@
 <html>
     <head>
         <link href="index.css" type="text/css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/043bb91fd0.js" crossorigin="anonymous"></script>
     </head>
     <body>
-
-        <div id="outer">
-            <div id="head"><h1>INDIA</h1></div>
-            <div id="inner"></div>
-            <div ><h2 id="curr-date"></h2></div> 
-            <div ><h2 id="curr-time"></h2></div>
-        </div>
-        <div id="form-show">
-            <button id="show-form-button" onclick="showform(event)">Show Form</button>
-        </div>
-        <form id="form">
-            <h1 id="form-heading">Alarm Form</h1>
-            <div id="line"></div>
-            <div id="form-content">
-                <div id="for-date">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <input name="date"id='date' type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Enter Date...">
+        <div id="upper">
+            <div id="daddy">
+                <div id="left"></div>
+                <div id="title">
+                    <div id="the">The</div>
+                    <div id="time">Time</div>
+                    <div id="keeper">Keeper</div>
+                    <div id="logo">
+                        <!-- <img src="timekeeper.png"> -->
+                    </div>
                 </div>
-                <div class="for-time">
-                    <i class="fa-solid fa-hourglass"></i>
-                    <input type="text" name="hours"id="hours" onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Hours..."required>
-    
-                </div>
-                <div class="for-time">
-                    <i class="fa-solid fa-hourglass"></i>
-                    <input type="text" name="mins"id="mins"onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Mins..." required>
-    
-                </div>
-                <div class="for-time">
-                    <i class="fa-solid fa-hourglass"></i>
-                    <input type="text" name="secs"id="secs" onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Secs..."required>
-    
-                </div>
-                <div id="for-zone">
-                    <i class="fa-solid fa-hourglass"></i>
-                    <select name="zone" id="zone">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                    </select>
-    
-                </div>
-               
+                <div id="right"></div>
             </div>
-            <div id="set-alarm">
-                <button onclick="addAlarm(event)" id="alarm-btn">Set Alarm</button>
+            <div>
+            <div class="clock">
+                <div class="outer-clock-face">
+                  <div class="marking marking-one"></div>
+                  <div class="marking marking-two"></div>
+                  <div class="marking marking-three"></div>
+                  <div class="marking marking-four"></div>
+                  <div class="inner-clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand min-hand"></div>
+                    <div class="hand second-hand"></div>
+                  </div>
+                </div>
+             </div>
+        </div>
+        </div>
+        <div id="middle">
+            <div id="outer">
+                <div><div id="head">INDIA</div></div>
+                <div id="inner"></div>
+                <div id="line"></div>
+                <div ><div id="curr-date"></div></div> 
+                <div ><div id="curr-time"></div></div>
+                <div id="form-show">
+                    <button id="show-form-button" onclick="showform(event)">Show Form</button>
+                </div>
+                <form id="form">
+                    <h1 id="form-heading">Alarm Form</h1>
+                    <div id="line"></div>
+                    <div id="form-content">
+                        <div id="for-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <input name="date"id='date' type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Enter Date...">
+                        </div>
+                        <div class="for-time">
+                            <i class="fa-solid fa-hourglass"></i>
+                            <input type="text" name="hours"id="hours" onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Hours..."required>
+            
+                        </div>
+                        <div class="for-time">
+                            <i class="fa-solid fa-hourglass"></i>
+                            <input type="text" name="mins"id="mins"onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Mins..." required>
+            
+                        </div>
+                        <div class="for-time">
+                            <i class="fa-solid fa-hourglass"></i>
+                            <input type="text" name="secs"id="secs" onfocus="(this.type='number')" onblur="if(!this.value)this.type='text'" placeholder="Enter Secs..."required>
+            
+                        </div>
+                        <div id="for-zone">
+                            <i class="fa-solid fa-hourglass"></i>
+                            <select name="zone" id="zone">
+                                <option value="AM">AM</option>
+                                <option value="PM">PM</option>
+                            </select>
+            
+                        </div>
+                    </div>  
+       
+                    <div id="set-alarm">
+                        <button onclick="addAlarm(event)" id="alarm-btn">Set Alarm</button>
+                    </div>
+                </form>
+                    </div>
             </div>
-        </form>
        
         <div id="items">
             <h2 id="alarm-head">Alarms List</h2>
@@ -57,31 +89,8 @@
                  
             </div>
          </div>
-        <div class="clock">
-            <div class="outer-clock-face">
-              <div class="marking marking-one"></div>
-              <div class="marking marking-two"></div>
-              <div class="marking marking-three"></div>
-              <div class="marking marking-four"></div>
-              <div class="inner-clock-face">
-                <div class="hand hour-hand"></div>
-                <div class="hand min-hand"></div>
-                <div class="hand second-hand"></div>
-              </div>
-            </div>
-        </div>
-        <div id="daddy">
-            <div id="left"></div>
-            <div id="title">
-                <div id="the"><h1>The</h1></div>
-                <div id="time"><h1>Time</h1></div>
-                <div id="keeper"><h1>Keeper</h1></div>
-                <div id="logo">
-                    <!-- <img src="timekeeper.png"> -->
-                </div>
-            </div>
-            <div id="right"></div>
-        </div>
+   
+
            
         <script src="index.js">
 

@@ -1,134 +1,22 @@
 body{
     background-color: salmon;
 }
-#daddy{
-    position: absolute;
-    top:70px;
-    height:40vh;
-    width:25vw;
-    display:flex;
-    flex-direction: row;
-}
-#left{
-    height:100%;
-    width:15%;
-    background-color:  rgb(199, 199, 240);
-}
-#title{
-    height:100%;
-    width:70%;
-    background-color: rgb(186, 186, 239);
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-#right{
-    height:100%;
-    width:15%;
-    background-color:rgb(199, 199, 240);
-}
-
-#title div{
-    margin-top: -10px;
-}
-#title #time{
-    margin-top: -35px;
-   
-}
-#title #keeper{
-    margin-top: -35px;
-}  
-
-#logo{
-    height:90px;
-    width:90px;
-    background:url('timekeeper.png');
-    background-size: cover;
-    border:2px solid black;
-}
-#outer{
-    position:relative;
-    top:70px;
-    margin:auto;
-    height:40vh;
-    width:25vw;
-    background-color:rgb(247, 162, 153);
-    /* background-image: url(''); */
-    background-size: cover;
-    /* border:1px solid black; */
-    border-radius:12px;
-}
-#inner{
-    height: 100%;
-    width:100%;
-    background-color: rgb(250, 143, 131);
-    position: absolute;
-    /* border:1px solid black; */
-    top:-20px;
-    right:20px;
-    z-index: -2;
-    border-radius: 12px;
-}
-#head{
+#upper{
+    height:350px;
+    width:97vw;
     position: relative;
-    top:20px;
-    /* background-color: aqua; */
-    text-align: center;
-}
-#curr-date{
-    position: relative;
-    top:30px;
-    text-align: center;
-}
-#curr-time{
-    position: relative;
-    top:50px;
-    text-align: center;
-}
-#form-show{
-    position: relative;
-    margin: auto;
-    text-align: center;
-    top:20px;
-}
-#show-form-button{
-    height:40px;
-    font-size: medium;
-    color:blue;
-    background-color: #bdb7f7;
-    border-radius: 5px;
-    border-width:0px;
-}
-#items{
-    position:relative;
-    margin: auto;
-    bottom:240px;
-    /* text-align: center; */
-    background-color: #ff5e5e;
-    width:50vw;
-    min-height:70vh;
-    flex-direction: column;
-    align-items: center;
-    height:auto;
-    padding:2px;
-    display: flex;
-}
-#alarm-head{
-    text-align: center;
-    text-decoration:underline;
+    top:40px;
 }
 .clock {
-   
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 60%;
     /* border: 7px solid #545271; */
     border-radius: 50%;
-    margin: 50px auto;
     position: absolute;
     right:40px;
-    top:20px;
     padding: 2rem;
     background: #c7c3f4;
+    right:50px;
   }
   
   .outer-clock-face {
@@ -229,38 +117,145 @@ body{
     background: #ff5e5e;
     width: 40%;
   }
-#form{
+#daddy{
+    /* position: absolute;
+    top:70px; */
+    /* text-align: center; */
+    height:100%;
+    width:400px;
+    display:flex;
+    flex-direction: row;
     margin: auto;
-    height:45vh;
-    width:30vw;
-    background-color: orange;
-    position: relative;
-    z-index: 10;
-    visibility: hidden;
+    position:absolute;
+    left:50px;
 }
-#form-heading{
+#left{
+    height:100%;
+    width:15%;
+    background-color:  rgb(199, 199, 240);
+}
+#title{
+    height:100%;
+    width:70%;
+    background-color: rgb(186, 186, 239);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size:60px;
+}
+#right{
+    height:100%;
+    width:15%;
+    background-color:rgb(199, 199, 240);
+}
+#logo{
+    height:100px;
+    width:100px;
+    background:url('timekeeper.png');
+    background-size: cover;
+    border:2px solid black;
+    position: relative;
+    top:30px;
+}
+#middle{
+    height:500px;
+    width:97vw;
+    margin-top: 40px;
+}
+#outer{
+    position:relative;
+    left:20px;
+    top:70px;
+    margin:auto;
+    height:100%;
+    width:50vw;
+    background-color:rgb(247, 162, 153);
+    /* background-image: url(''); */
+    background-size: cover;
+    /* border:1px solid black; */
+    border-radius:12px;
+}
+#inner{
+    height: 100%;
+    width:100%;
+    background-color: rgb(250, 143, 131);
+    position: absolute;
+    /* border:1px solid black; */
+    top:-35px;
+    right:35px;
+    z-index: -2;
+    border-radius: 12px;
+}
+#head{
+    position: relative;
+    top:20px;
+    font-size:50px;
     text-align: center;
 }
 #line{
     position: relative;
-    bottom:15px;
+    top:40px;
     margin: auto;
-    width:17vw;
+    width:35vw;
     height:2px;
     background-color: red;;
 }
+#curr-date{
+    position: relative;
+    top:70px;
+    font-size:50px;
+    text-align: center;
+}
+#curr-time{
+    position: relative;
+    top:120px;
+    font-size:40px;
+    text-align: center;
+}
+#form-show{
+    position: relative;
+    /* margin: auto; */
+    text-align: center;
+    top:190px;
+}
+#show-form-button{
+    height:40px;
+    font-size: 23px;
+    color:blue;
+    background-color: #bdb7f7;
+    border-radius: 10px;
+    border-width:0px;
+}
+
+
+#form{
+    position: absolute;
+    bottom:-170px;
+    margin: auto;
+    height:380px;
+    width:40vw;
+    background-color: orange;
+    position: relative;
+    z-index: 10;
+    visibility: hidden;
+  
+}
+#form-heading{
+    text-align: center;
+}
+
 #form i{
     position:relative;
-    top:5px;
+    top:7px;
     left:4px;
-    font-size: 18px;
+    font-size: 25px;
 }
 #for-date,.for-time,#for-zone{
     
     background-color: pink;
     border-radius: 15px;
     width:70%;
-    height:30px;
+    height:40px;
     margin: auto;
     display: flex;
 }
@@ -271,6 +266,7 @@ input,select{
     height:20px;
     border-width:0px;
     color: black;
+    font-size: 23px;
 }
 #form-content{
     position: relative;
@@ -288,7 +284,7 @@ input,select{
 .for-time input{
     position: relative;
     left:2px;
-
+    font-size: 23px;
 }
 .for-time i{
     position: relative;
@@ -302,13 +298,33 @@ input,select{
     text-align: center;
 }
 #alarm-btn{
-    height:30px;
-    font-size: medium;
+    height:40px;
+    font-size: 30px;
     background-color: rgb(111, 111, 232);
 }
 #for-date,.for-time,#for-zone{
    position: relative;
    top:8px;
+}
+#items{
+    position:relative;
+    margin: auto;
+    top:130px;
+    /* text-align: center; */
+    background-color: #ff5e5e;
+    width:70vw;
+    min-height:520px;
+    flex-direction: column;
+    align-items: center;
+    height:auto;
+    padding:2px;
+    display: flex;
+    padding-bottom: 25px;
+    border-radius: 20px;
+}
+#alarm-head{
+    text-align: center;
+    text-decoration:underline;
 }
 #timers .del{
     display: block;
@@ -334,7 +350,7 @@ input,select{
 #timers .glass{
     position: relative;
     top:-0px;
-    height: 15vh;
+    height: 150px;
     width:80%;
     background: rgba(255, 255, 255, 0.23);
     border-radius: 16px;
@@ -346,6 +362,7 @@ input,select{
     justify-content: space-around;
     align-items:center ;
     margin-top:10px;
+    font-size: 25px;
 } 
 #timers .glass:hover{
     background-color: pink;
@@ -353,149 +370,4 @@ input,select{
 #timers .glass div:hover{
     color:red;
     
-}
-@media (max-width:880px) {
-    .clock{
-        height:7rem;
-        width:7rem;
-    }
-    #outer{
-        height:40vh;
-        width:35vw;
-    }
-}
-@media (max-width:800px){
-    #items{
-        width:60vw;
-    }
-}
-@media(max-width:710px){
-    .clock{
-        position:absolute;
-        right:0px;
-    }
-    #items{
-        width:70vw;
-    }
-}
-@media(max-width:600px){
-    .clock {
-   
-        width: 4rem;
-        height: 4rem;
-        position:absolute;
-        right:5px;
-        top:-30px;
-    }
-      
-      .outer-clock-face {
-        position: relative;
-        width: 160%;
-        height: 160%;
-        left:-19px;
-        bottom:19px;
-      }
-      #title {
-        font-size:15px;
-      }
-      #daddy{
-        height: 35vh;
-      }
-      #form{
-        width:50vw;
-      }
-      
-}
-@media(max-width:570px){
-    #outer{
-        height:40vh;
-        width:35vw;
-        position: relative;
-        right:-30px;
-    }
-    #form-show{
-        position: relative;
-        right:-30px;
-    }
-    #form{
-        position: relative;
-        right:-30px;
-    }
-    #daddy{
-        width:30vw;
-        height: 25vh;
-        position:absolute;
-        left:0px;
-    }
-    #left,#right{
-        width:10%;
-    }
-    #title {
-        font-size:13px;
-      }
-    #logo{
-        height:70px;
-        width:70px;
-    }
-    #items{
-        width:80vw;
-    }
-}
-@media(max-width:480px){
-    .clock {
-   
-        width: 3rem;
-        height: 3rem;
-        position:absolute;
-        right:0px;
-        top:-30px;
-    }
-      
-    .outer-clock-face {
-        position: relative;
-        width: 180%;
-        height: 180%;
-        left:-19px;
-        bottom:19px;
-    }
-    #outer{
-        height:35vh;
-        width:35vw;
-        position: relative;
-        right:-30px;
-    }
-
-}
-@media (max-width:430px){
-    #outer{
-        height:35vh;
-        width:36vw;
-        position: relative;
-        right:-10px;
-    }
-    #form-show{
-        position: relative;
-        right:-10px;
-    }
-    #form{
-        width:70vw;
-        position: relative;
-        right:-10px;
-    }
-    #inner{
-       /* border:1px solid black; */
-        top:-12px;
-        right:12px;
-    }
-    #timers .glass{
-        width:90%;
-    }
-}
-@media (max-width:390px){
-    #title{
-        font-size: 11px;
-    }
-    #timers .glass{
-       font-size: 15px;
-    }
 }
